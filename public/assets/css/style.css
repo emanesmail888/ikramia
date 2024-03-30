@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins', sans-serif;
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .imgBx::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background:linear-gradient(225deg, #e91e63, #03a9f4); */
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+section .contentBx {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section .contentBx .formBx {
+    width: 50%;
+}
+
+section .contentBx .formBx h2 {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 4px;
+
+    display: inline-block;
+
+}
+
+.description {
+    font-weight: 200;
+    color: #595858;
+    font-size: 15px;
+    margin-bottom: 25px;
+
+}
+
+
+section .contentBx .formBx .inputBx {
+    margin-bottom: 20px;
+}
+
+
+section .contentBx .formBx .inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1.5px solid #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 8px;
+}
+
+
+section .contentBx .formBx .inputBx input[type="submit"] {
+    background: rgb(2, 170, 159);
+    color: #000;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 18px;
+}
+section .contentBx .formBx #nextButton {
+    background: rgb(2, 170, 159);
+    color: #000;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 18px;
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+}
+section .contentBx .formBx #registerButton {
+    background: rgb(2, 170, 159);
+    color: #000;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 18px;
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+}
+section .contentBx .formBx #prevButton {
+    background: rgb(2, 170, 159);
+    color: #000;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 18px;
+    padding: 3px 3px;
+}
+.wrap-button{
+    display: inline-flex;
+}
+.special_button{
+    background: rgb(211, 236, 219);
+    color: #000;
+    outline: #607d8b;
+    border-style: dotted;
+    border-color: rgb(120, 185, 155);
+    display: block;
+    margin-left: 3px;
+    padding: 7px;
+
+}
+.special_button i{
+
+    color: #ccc1a9;
+    font-size: 18px;
+
+
+}
+.special_button:active{
+    background: rgb(170, 219, 185);
+    border-color: rgb(120, 185, 155);
+    color: #000;
+    outline: #607d8b;
+    border-style: dotted;
+    display: block;
+    margin-left: 3px;
+    padding: 5px;
+
+}
+.special_button:focus{
+    background: rgb(170, 219, 185);
+    border-color: rgb(120, 185, 155);
+    color: #000;
+    outline: #607d8b;
+    border-style: dotted;
+    display: block;
+    margin-left: 3px;
+    padding: 5px;
+
+}
+
+.forget_password {
+    text-align: end;
+    margin-top: 4px;
+
+}
+
+.forget_password a {
+    color: rgb(12, 189, 189);
+    text-decoration: none;
+}
+
+section .contentBx .formBx .inputBx input[type="submit"]:hover {
+    background: rgb(6, 202, 202);
+}
+
+section .contentBx .formBx .inputBx .remember {
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+section .contentBx .formBx .inputBx p {
+    color: #607d8b;
+}
+
+section .contentBx .formBx .inputBx p a {
+    color: rgb(30, 167, 121);
+}
+
+.logo {
+    justify-items: start;
+    align-items: start;
+    position: relative;
+    margin: 10px 20px;
+
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    object-fit: cover;
+
+    border-radius: 50px;
+    position: relative;
+
+}
+
+.logo h1 {
+    padding-top: 10px;
+    display: inline;
+    position: absolute;
+}
+
+
+.haveAccount {
+    margin-top: 25px;
+}
+
+.haveAccount p {
+    color: #000;
+    font-size: 12;
+
+}
+
+.haveAccount a {
+    color: rgb(12, 189, 189);
+    font-size: 16;
+    font-weight: 500;
+
+}
+
+
+
+@media (max-width:768px) {
+    section .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    section .contentBx {
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 85%;
+        z-index: 1;
+        background-color: white;
+    }
+
+    section .contentBx .formBx {
+
+        width: 100%;
+        padding: 40px;
+        background: rgb(255, 255, 255/0.9);
+        margin: 50px;
+
+    }
+
+    section .contentBx .formBx h3 {
+        color: #607d8b;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500;
+
+    }
+}
